@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ScrollViewPagingExampleViewController : UIViewController {
+@interface ScrollViewPagingExampleViewController : UIViewController <UIScrollViewDelegate> {
 	IBOutlet UIScrollView	*_scrollView;
+	IBOutlet UIPageControl	*_pageControl;
 }
+
+- (IBAction) actionPageControlTapped:(UIPageControl*)control;
 
 @end
 
